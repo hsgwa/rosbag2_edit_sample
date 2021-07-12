@@ -40,7 +40,7 @@ CREATE TABLE messages(id INTEGER PRIMARY KEY,topic_id INTEGER NOT NULL,timestamp
 CREATE INDEX timestamp_idx ON messages (timestamp ASC);
 
 
-> uniqy 前
+> unify 前
 sqlite> select * from messages where topic_id=18 limit 10;
 93|18|1618559266855522762|@1
 252|18|1618559266955105215|@2
@@ -55,7 +55,7 @@ sqlite> select * from messages where topic_id=18 limit 10;
 
 ※　@ はバイナリ文字列
 
-> uniqy 後
+> unify 後
 
 sqlite> select * from messages where topic_id=18 limit 10;
 93|18|1618559266855522762|@1
